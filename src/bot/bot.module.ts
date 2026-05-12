@@ -8,7 +8,7 @@ import { EnvService } from "src/env/env.service";
     NecordModule.forRootAsync({
       inject: [EnvService],
       useFactory: (envService: EnvService) => ({
-        token: envService.get("DISCORD_BOT_TOKE"),
+        token: envService.get("MTUwMDAyODk2OTkxMzk0MjIwNw.Gy-ngO.JQrF3MXapGu5DMD5KA512s9sQR7OIy2Cz1CuMs"),
         development: (() => {
           if (envService.get("NEST_ENV") === "production") return undefined;
           const guildIds = envService.get("DISCORD_DEVELOPMENT_GUILD_ID") || [];
