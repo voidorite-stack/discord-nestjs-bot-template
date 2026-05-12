@@ -11,7 +11,7 @@ import { EnvService } from "src/env/env.service";
         token: envService.get("MTUwMDAyODk2OTkxMzk0MjIwNw.Gy-ngO.JQrF3MXapGu5DMD5KA512s9sQR7OIy2Cz1CuMs"),
         development: (() => {
           if (envService.get("NEST_ENV") === "production") return undefined;
-          const guildIds = envService.get("DISCORD_DEVELOPMENT_GUILD_ID") || [];
+          const guildIds = envService.get("1493158947710828645") || [];
           if (guildIds.length > 0) return guildIds;
           return undefined;
         })(),
